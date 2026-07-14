@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellBet26</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">WellBet<span>26</span></h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-wrapper">
+
+            <!-- Principais Partidas -->
+            <section class="principais-partidas">
+                <h2>Principais partidas</h2>
+
+                <div class="partidas-container">
+
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="match-name">Brasil x Haiti</span>
+                            <span class="match-time">19/06 - 23:30</span>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="times-section">
+
+                                <div class="time-item">
+                                    <img src="https://flagcdn.com/w40/br.png" alt="Brasil" class="bandeira">
+                                    <select class="select-gols" id="gols1_jogo1">
+                                        <option value="">-</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+
+                                <div class="time-item">
+                                    <img src="https://flagcdn.com/w40/ht.png" alt="Haiti" class="bandeira">
+                                    <select class="select-gols" id="gols2_jogo1">
+                                        <option value="">-</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn-enviar" onclick="enviarAposta('Brasil x Haiti', 1)">
+                                ENVIAR
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="match-name">Holanda x Japão</span>
+                            <span class="match-time">14/06 - 17:00</span>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="times-section">
+
+                                <div class="time-item">
+                                    <img src="https://flagcdn.com/w40/nl.png" alt="Holanda" class="bandeira">
+                                    <select class="select-gols" id="gols1_jogo2">
+                                        <option value="">-</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+
+                                <div class="time-item">
+                                    <img src="https://flagcdn.com/w40/jp.png" alt="Japão" class="bandeira">
+                                    <select class="select-gols" id="gols2_jogo2">
+                                        <option value="">-</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn-enviar" onclick="enviarAposta('Holanda x Japão', 2)">
+                                ENVIAR
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Histórico -->
+            <aside class="historico">
+                <div class="historico-header">Histórico</div>
+                <div class="historico-content" id="historico"></div>
+            </aside>
+
+        </div>
+    </div>
+
+    <script src="./src/js/script.js"></script>
+
+</body>
+</html>
